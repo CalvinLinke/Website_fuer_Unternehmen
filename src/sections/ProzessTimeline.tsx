@@ -28,7 +28,7 @@ export function ProzessTimeline() {
 
             {/* Animated connecting line */}
             <motion.div
-              className="absolute left-[10%] right-[10%] top-[1.25rem] h-px bg-gradient-to-r from-violet via-lavender to-lavender/30"
+              className="absolute left-[10%] right-[10%] top-[1.75rem] h-px bg-gradient-to-r from-violet via-lavender to-lavender/30"
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}
               viewport={{ once: true, margin: '-80px' }}
@@ -53,14 +53,14 @@ export function ProzessTimeline() {
                   >
                     {/* Dot on the line */}
                     <div
-                      className={`relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-[1.5px] transition-all duration-250 ${
+                      className={`relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 transition-all duration-250 ${
                         isActive
                           ? 'border-violet bg-violet shadow-[0_0_0_4px_rgba(79,19,117,0.15)]'
                           : 'border-lavender/40 bg-cream/90 group-hover:border-lavender group-hover:bg-cream'
                       }`}
                     >
                       <span
-                        className={`font-mono text-[0.5625rem] font-medium tracking-[0.1em] transition-colors duration-250 ${
+                        className={`font-mono text-[0.875rem] font-medium tracking-[0.1em] transition-colors duration-250 ${
                           isActive ? 'text-cream' : 'text-violet/70 group-hover:text-violet'
                         }`}
                       >
@@ -69,7 +69,7 @@ export function ProzessTimeline() {
                     </div>
 
                     {/* Title */}
-                    <div className="flex flex-col gap-1">
+                    <div className="flex flex-col items-center gap-1">
                       <span
                         className={`font-display block text-[0.9375rem] leading-[1.25] transition-colors duration-200 ${
                           isActive ? 'text-violet' : 'text-text group-hover:text-violet'
@@ -81,13 +81,13 @@ export function ProzessTimeline() {
                         Phase {step.number}
                       </span>
                       <span
-                        className={`block text-[0.6875rem] font-medium tracking-[0.04em] transition-all duration-200 ${
+                        className={`mt-1 inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-[0.75rem] font-semibold tracking-[0.04em] transition-all duration-200 ${
                           isActive
-                            ? 'text-violet'
-                            : 'text-text-muted/60 group-hover:text-violet/70'
+                            ? 'border-violet bg-violet text-cream'
+                            : 'border-violet/30 bg-cream text-violet group-hover:border-violet group-hover:bg-violet/10'
                         }`}
                       >
-                        {isActive ? '▲ schließen' : 'Details ↓'}
+                        {isActive ? '▲ Schließen' : 'Details ↓'}
                       </span>
                     </div>
                   </motion.button>
