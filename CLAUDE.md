@@ -150,6 +150,14 @@ einzigartig · nichtsdestotrotz · selbstverständlich · gleichermaßen · ents
 - Mehr als zwei gleich lange Sätze hintereinander
 - Keyword-Wiederholung statt semantischer Variation
 
+**Gedankenstrich (—) verboten:** In allen nutzerseitigen Texten (Sections, Seiten,
+Komponenten-Strings, Metadaten) keine Gedankenstriche verwenden. Stattdessen, je nach
+Funktion: Komma, Doppelpunkt oder Satztrennung für Sinnzusammenhänge in Fließtext;
+Mittepunkt „·" als Trenner in Titeln/Labels (z. B. „01 · Startseite",
+„Ablauf · 5 Schritte"); Klammern „(...)" für echte Einschübe. Ausnahme: Halbgeviertstrich
+„–" (Bis-Strich) in Zahlenbereichen wie „2–4 Wochen" bleibt erlaubt. In Code-Kommentaren
+(nicht nutzerseitig) ist „—" weiterhin zulässig.
+
 **Hinweis Eigenname:** "Maßgeschneidert" steht auf der Verbotsliste, taucht aber wörtlich in der
 Brief-Vorgabe `ZIELGRUPPE_HAUPTPROBLEM` auf ("…eine maßgeschneiderte, hoch moderne Website…") —
 dort als Kunden-Eingabe zulässig zu paraphrasieren ("auf den eigenen Betrieb zugeschnitten",
