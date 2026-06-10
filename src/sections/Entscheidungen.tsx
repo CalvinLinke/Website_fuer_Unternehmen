@@ -21,39 +21,39 @@ const DECISIONS: Decision[] = [
   {
     number: '01',
     span: 'lg:col-span-7',
-    statement: 'Diese Seite ist mit Next.js gebaut — kein Page-Builder, kein Plugin-Stack.',
+    statement: 'Diese Seite ist mit Next.js gebaut, kein Page-Builder, kein Plugin-Stack.',
     detail: 'Code statt Baukasten heißt: ein Update an Inhalten ändert nichts an der Geschwindigkeit.',
     artefact: 'performance',
   },
   {
     number: '02',
     span: 'lg:col-span-5',
-    statement: 'Der Preis steht fest, bevor irgendetwas beginnt — nicht danach.',
+    statement: 'Der Preis steht fest, bevor irgendetwas beginnt, nicht danach.',
     detail: 'Abgerechnet wird das Projekt, nicht die Stunde.',
   },
   {
     number: '03',
     span: 'lg:col-span-5',
-    statement: 'Jedes Projekt beginnt mit einer Analyse des bestehenden Auftritts — nicht mit einer Vorlage.',
+    statement: 'Jedes Projekt beginnt mit einer Analyse des bestehenden Auftritts, nicht mit einer Vorlage.',
     detail: 'Was an der aktuellen Seite funktioniert, bleibt erhalten. Der Rest wird neu gedacht.',
   },
   {
     number: '04',
     span: 'lg:col-span-7',
-    statement: 'Weniger Elemente, mehr Wirkung — der Unterschied zeigt sich oft erst im direkten Vergleich.',
+    statement: 'Weniger Elemente, mehr Wirkung: Der Unterschied zeigt sich oft erst im direkten Vergleich.',
     detail: 'Bewegen Sie den Regler.',
     artefact: 'slider',
   },
   {
     number: '05',
     span: 'lg:col-span-4',
-    statement: '2 bis 4 Wochen von Erstgespräch bis Launch — der Rahmen steht vorher fest.',
+    statement: '2 bis 4 Wochen von Erstgespräch bis Launch, der Rahmen steht vorher fest.',
     detail: 'Die Analyse am Anfang erspart die Korrekturschleifen, die andere Projekte verzögern.',
   },
   {
     number: '06',
     span: 'lg:col-span-4',
-    statement: 'Eine Person verantwortet Analyse, Design und Code — von Anfang bis Ende.',
+    statement: 'Eine Person verantwortet Analyse, Design und Code, von Anfang bis Ende.',
     detail: 'Keine Übergabe zwischen Abteilungen, bei der unterwegs Informationen verloren gehen.',
   },
   {
@@ -75,7 +75,7 @@ export function Entscheidungen() {
         <SectionHeading
           eyebrow="Arbeitsweise"
           title="Sieben Festlegungen für jedes Projekt"
-          description="Unabhängig davon, wie groß ein Projekt ist oder wie es beginnt — diese sieben Punkte gelten von Anfang an."
+          description="Unabhängig davon, wie groß ein Projekt ist oder wie es beginnt, diese sieben Punkte gelten von Anfang an."
           className="max-w-[48ch]"
         />
 
