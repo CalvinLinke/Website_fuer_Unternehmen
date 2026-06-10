@@ -33,7 +33,7 @@ export function ProzessIntro() {
             transition={{ duration: 0.7, delay: 0.12, ease: EASE }}
             className="mx-auto mt-6 max-w-[52ch] text-[1.0625rem] leading-[1.7] text-text-muted"
           >
-            Kein Geheimnis, kein Blackbox-Prozess: Hier sehen Sie genau, was in welcher Phase passiert, wie viel Zeit realistisch einzuplanen ist — und an welchen Stellen Sie eingebunden werden, ohne dass daraus ein Vollzeitjob neben Ihrem eigentlichen Geschäft wird.
+            Kein Geheimnis, kein Blackbox-Prozess: Hier sehen Sie genau, was in welcher Phase passiert, wie viel Zeit realistisch einzuplanen ist, und an welchen Stellen Sie eingebunden werden, ohne dass daraus ein Vollzeitjob neben Ihrem eigentlichen Geschäft wird.
           </motion.p>
         </div>
       </Container>
