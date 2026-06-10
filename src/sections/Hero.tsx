@@ -73,7 +73,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3, ease: EASE }}
-              className="inline-block rounded-[var(--radius-card)] bg-cream px-4 py-3"
+              className="inline-block rounded-[var(--radius-card)] bg-cream px-3 py-2"
             >
               <Logo variant="hero" priority />
             </motion.div>
