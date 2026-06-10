@@ -24,13 +24,13 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 const description =
-  'Professionelle Websites für kleine und mittelständische Unternehmen: schnell umgesetzt, fair kalkuliert und exakt auf Ihren Betrieb zugeschnitten — von der IST-Analyse bis zum Launch.'
+  'Professionelle Websites für kleine und mittelständische Unternehmen: schnell umgesetzt, fair kalkuliert und exakt auf Ihren Betrieb zugeschnitten, von der IST-Analyse bis zum Launch.'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} — ${SITE.slogan}`,
-    template: `%s — ${SITE.name}`,
+    default: `${SITE.name} · ${SITE.slogan}`,
+    template: `%s · ${SITE.name}`,
   },
   description,
   keywords: [
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     siteName: SITE.name,
-    title: `${SITE.name} — ${SITE.slogan}`,
+    title: `${SITE.name} · ${SITE.slogan}`,
     description,
     url: SITE.url,
   },
