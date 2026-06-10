@@ -25,7 +25,7 @@ export function ReferenzenIntro() {
               transition={{ duration: 0.7, delay: 0.05, ease: EASE }}
               className="font-display mt-4 max-w-[20ch] text-[clamp(2.25rem,5.5vw,3.75rem)] leading-[1.1] text-text"
             >
-              Anonymisiert — aus gutem Grund, nicht aus Mangel an Beispielen
+              Anonymisiert — aus gutem Grund offengelegt
             </motion.h1>
           </div>
 
