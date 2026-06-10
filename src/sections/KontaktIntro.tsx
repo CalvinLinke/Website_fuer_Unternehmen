@@ -25,7 +25,7 @@ export function KontaktIntro() {
               Lassen Sie uns über Ihren Webauftritt sprechen.
             </h1>
             <p className="mt-6 max-w-[50ch] text-[1.0625rem] leading-[1.7] text-text-muted">
-              Kein Verkaufsgespräch, kein Fachchinesisch — einfach ein offener Austausch darüber, wo Ihr Betrieb heute steht und ob ich Sie auf dem Weg zu einer Website, die wirklich für Sie arbeitet, unterstützen kann.
+              Kein Verkaufsgespräch, kein Fachchinesisch, einfach ein offener Austausch darüber, wo Ihr Betrieb heute steht und ob ich Sie auf dem Weg zu einer Website, die wirklich für Sie arbeitet, unterstützen kann.
             </p>
           </motion.div>
           <motion.div
