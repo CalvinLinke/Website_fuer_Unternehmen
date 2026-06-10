@@ -9,9 +9,9 @@ import { CTA } from '@/lib/constants'
 const EASE = [0.16, 1, 0.3, 1] as const
 
 const BULLETS = [
-  'Fertig in 2–4 Wochen — ohne technischen Aufwand Ihrerseits',
-  'Festpreis nach dem Erstgespräch — keine versteckten Kosten',
-  'Auf Ihren Betrieb zugeschnitten — kein Baukastensystem',
+  'Fertig in 2–4 Wochen, ohne technischen Aufwand Ihrerseits',
+  'Festpreis nach dem Erstgespräch, keine versteckten Kosten',
+  'Auf Ihren Betrieb zugeschnitten, kein Baukastensystem',
 ] as const
 
 export function Hero() {
@@ -48,7 +48,7 @@ export function Hero() {
           aria-hidden
           className="mb-4 block select-none font-mono text-[0.5625rem] uppercase tracking-[0.18em] text-lavender/40"
         >
-          01 — Startseite
+          01 · Startseite
         </motion.span>
 
         {/* Glass-Card */}
@@ -78,7 +78,7 @@ export function Hero() {
             </motion.div>
 
             <p className="mt-4 font-mono text-[0.5625rem] uppercase tracking-[0.14em] text-lavender/45">
-              Für Unternehmen ohne — oder mit veralteter — Website
+              Für Unternehmen ohne Website oder mit veralteter Website
             </p>
 
             <motion.h1
@@ -120,7 +120,7 @@ export function Hero() {
               {CTA.label}
             </Button>
             <p className="text-[0.875rem] leading-[1.5] text-text-on-ink-muted">
-              Im Erstgespräch klären wir, ob es passt — unverbindlich, ohne Verkaufsdruck.
+              Im Erstgespräch klären wir, ob es passt, unverbindlich und ohne Verkaufsdruck.
             </p>
           </motion.div>
         </motion.div>
