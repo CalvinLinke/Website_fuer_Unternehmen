@@ -31,7 +31,7 @@ export function PerformanceReadout() {
   return (
     <div className="mt-6 rounded-[var(--radius-card)] border border-ink-line bg-ink/60 px-4 py-3">
       <span className="font-mono text-[0.5rem] uppercase tracking-[0.18em] text-lavender/40">
-        Live-Messung — diese Seite, jetzt geladen
+        Live-Messung · diese Seite, jetzt geladen
       </span>
       <div className="mt-2 min-h-[2.25rem]">
         <AnimatePresence mode="wait">
