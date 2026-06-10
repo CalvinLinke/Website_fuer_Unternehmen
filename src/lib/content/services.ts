@@ -35,7 +35,7 @@ export const SERVICES: Service[] = [
     highlights: [
       'Übernahme bestehender Inhalte, wo sie noch tragen',
       'Technischer Neuaufbau ohne Bruch für Ihre bestehenden Kunden',
-      'Laufende Pflege und Weiterentwicklung nach dem Launch möglich',
+      'Struktur so angelegt, dass spätere Erweiterungen ohne Neuaufbau möglich sind',
     ],
   },
 ]
