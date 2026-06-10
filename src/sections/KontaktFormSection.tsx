@@ -13,7 +13,7 @@ export function KontaktFormSection() {
                 Schreiben Sie mir
               </h2>
               <p className="mt-2 text-[0.9375rem] leading-[1.6] text-text-muted">
-                In der Regel antworte ich innerhalb eines Werktages — persönlich, nicht automatisiert.
+                In der Regel antworte ich innerhalb eines Werktages, persönlich und nicht automatisiert.
               </p>
             </div>
             <KontaktForm />
