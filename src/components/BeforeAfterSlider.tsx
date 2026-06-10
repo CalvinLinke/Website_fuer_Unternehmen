@@ -42,7 +42,7 @@ export function BeforeAfterSlider() {
         className="relative aspect-[16/9] touch-none select-none"
       >
         <Image
-          src="/neu.png"
+          src="/alt.png"
           alt="Beispiel einer überarbeiteten Website, klar strukturiert"
           fill
           unoptimized
@@ -50,7 +50,7 @@ export function BeforeAfterSlider() {
         />
         <div className="absolute inset-0" style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}>
           <Image
-            src="/alt.png"
+            src="/neu.png"
             alt="Beispiel einer veralteten Website, dicht und unübersichtlich"
             fill
             unoptimized
