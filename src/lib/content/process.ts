@@ -35,11 +35,11 @@ export const PROCESS_STEPS: ProcessStep[] = [
   },
   {
     number: '05',
-    title: 'Launch & Betreuung',
+    title: 'Launch',
     description:
-      'Die Website geht online — meist innerhalb weniger Wochen nach dem Erstgespräch. Damit endet die Zusammenarbeit nicht zwangsläufig: Viele der Betriebe, mit denen ich arbeite, lassen ihre Seite danach laufend weiterentwickeln.',
+      'Die Website geht online — meist innerhalb weniger Wochen nach dem Erstgespräch. Mit dem Launch ist das Projekt abgeschlossen: Sie erhalten alle Dateien und Zugänge, die für den eigenständigen Betrieb nötig sind.',
     detail:
-      'Kleine Anpassungen, neue Inhalte, technische Updates — auf Wunsch übernehme ich das, damit Sie sich auf Ihr eigentliches Geschäft konzentrieren können.',
+      'Eine kurze Übergabe stellt sicher, dass Sie Inhalte selbst pflegen können, ohne dafür auf jemanden angewiesen zu sein.',
   },
 ]
 
@@ -70,6 +70,6 @@ export const FAQS: FaqItem[] = [
   {
     question: 'Endet die Zusammenarbeit, sobald die Website online ist?',
     answer:
-      'Nicht zwangsläufig. Viele der Betriebe, mit denen ich arbeite, lassen ihre Seite danach laufend weiterentwickeln — neue Inhalte, kleine Anpassungen, technische Updates. Das ist ein Angebot, kein Zwang: Die Website gehört Ihnen, mit oder ohne fortlaufende Betreuung danach.',
+      'Ja — mit dem Launch ist das Projekt abgeschlossen. Sie erhalten alle Dateien und Zugänge sowie eine kurze Übergabe, damit Sie Inhalte selbst pflegen können. Die Website gehört vollständig Ihnen, ohne dass Sie an eine fortlaufende Vereinbarung gebunden sind.',
   },
 ]
