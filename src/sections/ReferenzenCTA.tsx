@@ -21,10 +21,10 @@ export function ReferenzenCTA() {
         >
           <StatBadge value={SOCIAL_PROOF.value} label={SOCIAL_PROOF.label} surface="onDark" />
           <h2 className="font-display text-[clamp(2rem,4.6vw,3rem)] leading-[1.15] text-text-on-ink">
-            Vielleicht ist Ihr Betrieb das nächste Beispiel auf dieser Seite — anonymisiert oder, wenn Sie möchten, mit Namen.
+            Vielleicht ist Ihr Betrieb das nächste Beispiel auf dieser Seite, anonymisiert oder, wenn Sie möchten, mit Namen.
           </h2>
           <p className="max-w-[48ch] text-[1.0625rem] leading-[1.65] text-text-on-ink-muted">
-            Im ersten Gespräch geht es nicht um Verkauf, sondern darum, ob und wie ich Ihnen konkret weiterhelfen kann — auf Augenhöhe, ohne Druck.
+            Im ersten Gespräch geht es nicht um Verkauf, sondern darum, ob und wie ich Ihnen konkret weiterhelfen kann, auf Augenhöhe und ohne Druck.
           </p>
           <Button href={CTA.href} variant="onDark" size="md">
             {CTA.label}
