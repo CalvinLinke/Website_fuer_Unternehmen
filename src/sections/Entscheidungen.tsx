@@ -3,7 +3,6 @@
 import { motion } from 'motion/react'
 import { Container } from '@/components/Container'
 import { SectionHeading } from '@/components/SectionHeading'
-import { SignatureLine } from '@/components/SignatureLine'
 import { PerformanceReadout } from '@/components/PerformanceReadout'
 import { BeforeAfterSlider } from '@/components/BeforeAfterSlider'
 
@@ -68,10 +67,6 @@ export function Entscheidungen() {
   return (
     <section className="relative bg-cream-deep py-[clamp(5rem,10vw,9rem)]">
       <Container>
-        <div className="mb-10 flex justify-center">
-          <SignatureLine mode="view" width={140} className="opacity-75" />
-        </div>
-
         <SectionHeading
           eyebrow="Arbeitsweise"
           title="Sieben Festlegungen für jedes Projekt"
