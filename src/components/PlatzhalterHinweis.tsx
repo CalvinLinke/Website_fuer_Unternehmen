@@ -10,7 +10,7 @@ export function PlatzhalterHinweis() {
       <p className="text-[0.9375rem] leading-[1.65]">
         Die rechtlich bindenden Inhalte dieser Seite sind Beispieltexte zur Veranschaulichung und
         ersetzen keine Rechtsberatung. Vor der Veröffentlichung sollten sie durch einen Anwalt
-        oder eine Anwältin geprüft und durch rechtsverbindliche Inhalte ersetzt werden — die
+        oder eine Anwältin geprüft und durch rechtsverbindliche Inhalte ersetzt werden. Die
         Kontakt- und Stammdaten auf dieser Seite sind hingegen real.
       </p>
     </div>
