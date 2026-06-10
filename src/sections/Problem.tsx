@@ -8,7 +8,7 @@ const EASE = [0.16, 1, 0.3, 1] as const
 const OBSERVATIONS = [
   {
     quote: 'Unsere Homepage ist von 2016 und sieht man ihr auch an.',
-    note: 'Eine Aussage, die ich in Erstgesprächen so oder ähnlich regelmäßig höre — meist mit einem entschuldigenden Lächeln dazu.',
+    note: 'Eine Aussage, die ich in Erstgesprächen so oder ähnlich regelmäßig höre, meist mit einem entschuldigenden Lächeln dazu.',
   },
   {
     quote: 'Ehrlich gesagt schauen wir da selbst kaum noch rein.',
@@ -16,7 +16,7 @@ const OBSERVATIONS = [
   },
   {
     quote: 'Ein Interessent meinte neulich, er hätte uns online gar nicht gefunden.',
-    note: 'Kein Einzelfall — oft der Moment, in dem aus einem vagen Gefühl ein konkretes Problem wird.',
+    note: 'Kein Einzelfall: oft der Moment, in dem aus einem vagen Gefühl ein konkretes Problem wird.',
   },
 ]
 
@@ -41,7 +41,7 @@ export function Problem() {
               Was ich in Erstgesprächen immer wieder höre
             </h2>
             <p className="relative mt-5 max-w-[46ch] text-[1.0625rem] leading-[1.65] text-text-muted">
-              Drei Sätze, die in unterschiedlicher Form fast jedes Gespräch begleiten — und die ziemlich genau zeigen, woran es online tatsächlich hakt.
+              Drei Sätze, die in unterschiedlicher Form fast jedes Gespräch begleiten und ziemlich genau zeigen, woran es online tatsächlich hakt.
             </p>
           </div>
 
