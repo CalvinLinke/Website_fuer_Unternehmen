@@ -22,7 +22,7 @@ export function LeistungenProcess() {
               Neugierig auf den Ablauf?
             </span>
             <p className="mt-3 text-[1.0625rem] leading-[1.65] text-text">
-              Diese drei Leistungen sind die Bausteine — der Ablaufplan zeigt, wie sie konkret ineinandergreifen: vom ersten Gespräch bis zur Betreuung nach dem Launch, Schritt für Schritt erklärt.
+              Diese drei Leistungen sind die Bausteine — der Ablaufplan zeigt, wie sie konkret ineinandergreifen: vom ersten Gespräch bis zum Launch, Schritt für Schritt erklärt.
             </p>
           </div>
           <Link
