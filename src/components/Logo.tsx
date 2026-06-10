@@ -21,7 +21,7 @@ export function Logo({ variant = 'default', priority, className }: LogoProps) {
   return (
     <Link
       href="/"
-      aria-label="Website für Unternehmen — zur Startseite"
+      aria-label="Website für Unternehmen · zur Startseite"
       className={className}
     >
       <Image
