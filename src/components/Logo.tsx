@@ -6,7 +6,7 @@ const RATIO = 1520 / 2688
 const SIZES = {
   default: { width: 220, height: Math.round(220 * RATIO) },
   compact: { width: 130, height: Math.round(130 * RATIO) },
-  hero:    { width: 280, height: Math.round(280 * RATIO) },
+  hero:    { width: 220, height: Math.round(220 * RATIO) },
 } as const
 
 type LogoProps = {
