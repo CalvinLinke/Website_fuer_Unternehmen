@@ -78,7 +78,7 @@ export function Hero() {
             </motion.div>
 
             <p className="mt-4 font-mono text-[0.5625rem] uppercase tracking-[0.14em] text-lavender/45">
-              Für Unternehmen ohne aktuellen Webauftritt
+              Für Unternehmen ohne — oder mit veralteter — Website
             </p>
 
             <motion.h1
@@ -120,7 +120,7 @@ export function Hero() {
               {CTA.label}
             </Button>
             <p className="text-[0.875rem] leading-[1.5] text-text-on-ink-muted">
-              Schnell umgesetzt, fair kalkuliert.
+              Im Erstgespräch klären wir, ob es passt — unverbindlich, ohne Verkaufsdruck.
             </p>
           </motion.div>
         </motion.div>
