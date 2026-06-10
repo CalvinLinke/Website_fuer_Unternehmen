@@ -1,16 +1,16 @@
 import { Hero } from '@/sections/Hero'
+import { Problem } from '@/sections/Problem'
 import { Loesung } from '@/sections/Loesung'
+import { Entscheidungen } from '@/sections/Entscheidungen'
 import { Testimonials } from '@/sections/Testimonials'
-import { Preisvorteil } from '@/sections/Preisvorteil'
-import { Technologie } from '@/sections/Technologie'
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <Problem />
       <Loesung />
-      <Preisvorteil />
-      <Technologie />
+      <Entscheidungen />
       <Testimonials />
     </>
   )
