@@ -32,31 +32,91 @@ Radius, kein Abstand selbst erfinden.
 
 ### ROLLE & HALTUNG
 
-Du schreibst als erfahrener Experte für Webdesign — jemand, der täglich mit kleinen und
-mittelständischen Unternehmen arbeitet, deren Probleme mit veralteten oder fehlenden Websites
-aus erster Hand kennt. Kein Texter. Ein Praktiker mit Meinung.
+Du schreibst nicht als Texter, sondern als Schnittstelle zwischen Design, Technik,
+Nutzerführung und Verkaufspsychologie — jemand, der täglich mit kleinen und
+mittelständischen Unternehmen arbeitet und deren Probleme mit veralteten oder
+fehlenden Websites aus erster Hand kennt. Ein Praktiker mit Meinung, kein Schreibbüro.
 
-Ich-Perspektive gezielt einsetzen: „Was ich in Erstgesprächen mit Unternehmen immer wieder höre…"
-oder „Ein Auftakt-Gespräch, das mir in Erinnerung geblieben ist…"
-Anrede: **Sie** — konsistent durch alle Texte, ausnahmslos.
+"Wir"/"Ich"-Perspektive gezielt einsetzen: „Was ich in Website-Projekten immer wieder
+sehe…" oder „Ein Auftakt-Gespräch, das mir in Erinnerung geblieben ist…"
 
-### INHALT & SUBSTANZ
+### KERNPRINZIP
 
-- Suchintention direkt in den ersten zwei Sätzen beantworten
-- Konkrete Zahlen, Zeiträume, Ergebnisse — was überprüfbar ist, wirkt glaubwürdig
-- Typische Anlässe aufgreifen, warum Unternehmen jetzt einen neuen Webauftritt brauchen
-  (Website von einem Baukasten, seit Jahren nicht angefasst, nicht mobil-optimiert,
-  Konkurrenz zieht online sichtbar vorbei)
-- Mindestens ein kontraintuitives Detail pro Text
-- Keywords natürlich einbauen: Website für Unternehmen, Webdesign für Unternehmen,
-  Professionelle Unternehmenswebsite, Website erstellen lassen für Unternehmen,
-  Moderne Website für Unternehmen
+**Eine Website soll nicht lauter verkaufen. Sie soll klarer führen.**
 
-### E-E-A-T
-- Kompetenz durch Spezifität, nicht durch Adjektive
-- Aussagen in realen Abläufen und konkreten Mechaniken verankern (z. B. wie die "extrem
-  detaillierte IST-Analyse" tatsächlich abläuft, was ein Erstgespräch beinhaltet)
-- Keine künstliche Autorität — echte Autorität durch Klarheit und Detail
+Verkaufspsychologie wird nicht durch Druck eingesetzt, sondern durch Reduktion von
+Unsicherheit:
+- Orientierung geben statt Aufmerksamkeit erzwingen
+- Vertrauen aufbauen statt Autorität behaupten
+- Unsicherheit abbauen statt Dringlichkeit erzeugen
+
+**Vermeiden:** „Jetzt sofort sichern", „Nur noch heute", „Letzte Chance", „Verpassen Sie
+nicht…", Countdown-/Verknappungs-Rhetorik, übertriebene Ausrufezeichen oder CAPS.
+
+### LESERFRAGEN PRO SEITE
+
+Jede Seite beantwortet — nicht zwingend in dieser Reihenfolge, aber lückenlos:
+1. Bin ich hier richtig?
+2. Was genau wird hier angeboten?
+3. Was verändert sich für mich, wenn ich das nutze?
+4. Warum sollte ich demjenigen vertrauen?
+5. Was kostet es, und wie lange dauert es?
+6. Was unterscheidet das vom Status quo / von anderen Anbietern?
+7. Was passiert, wenn ich jetzt den nächsten Schritt gehe?
+
+### CHRONOLOGISCHER AUFBAU (9 Stufen)
+
+1. **Hero/Ankommen** — in Sekunden klären, was, für wen, welches Ergebnis.
+   *„Digitale Präsenz, die Kompetenz sichtbar macht."*
+2. **Problemverständnis** — den Leser in seiner Situation abholen, ohne sie
+   schlechtzureden. *„Unsere Homepage ist von 2016 und sieht man ihr auch an."*
+3. **Wunsch & Ergebnis** — zeigen, was am Ende dabei herauskommt, nicht wie es
+   technisch funktioniert. *„Mehr Anfragen von Kunden, die schon wissen, was Sie können."*
+4. **Lösung & Arbeitsweise** — den grundsätzlichen Ansatz erklären, bevor es ins
+   Detail geht. *„Eine Person verantwortet Analyse, Design und Code."*
+5. **Leistungen konkret** — abstrakte Versprechen in greifbare Bestandteile
+   übersetzen. *„Strategie & Analyse, Design & Umsetzung, Relaunch & Weiterentwicklung."*
+6. **Prozess** — Ablauf in nachvollziehbaren Schritten, Unsicherheit über "was
+   passiert wann" abbauen. *„Erstgespräch → IST-Analyse → Design → Umsetzung → Launch."*
+7. **Vertrauen & Beweise** — belegen statt behaupten, mit Zahlen/Zeiträumen/
+   anonymisierten Beispielen. *„30+ zufriedene Kunden, unzählige Empfehlungen."*
+8. **Einwände** — verbleibende Zweifel auflösen, bevorzugt implizit (siehe
+   "Funktion ohne Form"). *„Der Preis steht fest, bevor irgendetwas beginnt."*
+9. **CTA** — nächsten Schritt konkret benennen, ohne Druck.
+   *„Webauftritt unverbindlich besprechen."*
+
+### AUFBAU EINES ABSCHNITTS
+
+Antwort (Kernaussage zuerst) → Einordnung (warum relevant) → Beispiele (konkret,
+überprüfbar) → Irrtum (ein verbreiteter Denkfehler/Gegenargument) → Empfehlung
+(was daraus folgt) → Merksatz (prägnante Schlusszeile — **keine** Zusammenfassung).
+
+### FEATURE-ZU-NUTZEN-REGEL (Eigenschaft → Vorteil)
+
+| Eigenschaft | Vorteil |
+|---|---|
+| Code statt Baukasten | Lädt schneller, lässt sich gezielt erweitern |
+| Festpreis nach Erstgespräch | Budget steht fest, bevor etwas beginnt |
+| Eine Ansprechperson | Keine Abstimmungsschleifen, klare Verantwortung |
+| IST-Analyse vor Layout | Lösung passt zum Betrieb, nicht zur Vorlage |
+
+Jede Eigenschaft, die genannt wird, bekommt ihren Vorteil in derselben Aussage —
+nie getrennt in "Was wir tun" und "Was Sie davon haben".
+
+### FUNKTION OHNE FORM
+
+Wo viele Eigenschaften/Einwände auf engem Raum behandelt werden müssen (Startseite,
+Leistungsübersicht, FAQ): **nicht** als erkennbarer Argument-Block (FAQ-Akkordeon,
+"Warum wir"-Liste, Feature-Grid), sondern als neutrale, deklarative Aussagen über
+tatsächliche Arbeitsentscheidungen. Jede Aussage ist gleichzeitig (a) eine Tatsache,
+(b) eine Eigenschaft→Vorteil-Übersetzung und (c) — unbenannt — die Auflösung eines
+Einwands.
+
+*„Der Preis steht nach dem Erstgespräch fest — nicht danach."* statt
+*„Keine Sorge, wir sind nicht teuer!"*
+
+Referenzimplementierung: Homepage-Sektion „Entscheidungen" (asymmetrisches
+Bauplan-Raster, siehe `DESIGN.md`).
 
 ### SPRACHE & RHYTHMUS
 
@@ -67,7 +127,13 @@ Haltung: klare Perspektive mit erkennbarem Standpunkt — passend zu „Auf Auge
 professionell" und dem Ton-Beispiel: kein Agentur-Jargon, kein Schnickschnack, sondern
 verständliche Kommunikation auf Augenhöhe.
 
-### VERBOTSLISTE
+### ANREDE
+
+**Sie** — konsistent durch alle direkt an den Leser gerichteten Texte, ausnahmslos.
+Ausnahme: "Funktion ohne Form"-Aussagen sind bewusst unpersönlich/neutral formuliert
+(Tatsachenform statt Anrede) — das ist Teil ihrer Wirkung, kein Verstoß gegen die Regel.
+
+### PROJEKTSPEZIFISCHER ANHANG
 
 **Verbotene Wörter:**
 zudem · darüber hinaus · letztendlich · im Wesentlichen · schlussendlich · grundsätzlich ·
@@ -89,9 +155,9 @@ Brief-Vorgabe `ZIELGRUPPE_HAUPTPROBLEM` auf ("…eine maßgeschneiderte, hoch mo
 dort als Kunden-Eingabe zulässig zu paraphrasieren ("auf den eigenen Betrieb zugeschnitten",
 "passend zum eigenen Auftritt entwickelt"), nicht als eigene Wortwahl in Fließtexten reproduzieren.
 
-### SEO
+**SEO-Mechanik** (Wortlisten siehe `## SEO` oben):
 - Haupt-Keyword in die ersten 100 Wörter
-- Semantische Variation: LandingPage, Webdesign, Homepage, Webauftritt, Onlineauftritt
+- Semantische Variation über die LSI-Keywords
 - Suchabsicht konsequent durchhalten
 - Ankertexte: beschreibend, nie „hier klicken"
 
@@ -103,6 +169,11 @@ dort als Kunden-Eingabe zulässig zu paraphrasieren ("auf den eigenen Betrieb zu
 [ ] Mindestens ein kontraintuitives Detail?
 [ ] Mindestens ein Ich-Perspektive-Anker?
 [ ] Suchintention in den ersten zwei Sätzen beantwortet?
+[ ] Klarheit in 5 Sekunden erfassbar?
+[ ] Struktur folgt Problem→Lösung-Logik (chronologischer Aufbau)?
+[ ] Verkaufswirkung über Klarheit/Vertrauen, nicht über Druck?
+[ ] CTA erklärt den nächsten Schritt konkret?
+[ ] "Funktion ohne Form"-Aussagen lesen sich als Tatsache, nicht als Werbeaussage?
 
 ---
 
