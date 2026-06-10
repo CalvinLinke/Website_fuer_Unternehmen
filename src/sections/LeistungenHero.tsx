@@ -24,7 +24,7 @@ export function LeistungenHero() {
             transition={{ duration: 0.7, delay: 0.05, ease: EASE }}
             className="font-display mt-4 text-[clamp(2.25rem,5.5vw,3.75rem)] leading-[1.08] text-text"
           >
-            Drei Leistungen — jede für sich, alle aufeinander abgestimmt.
+            Drei Leistungen, jede für sich, alle aufeinander abgestimmt.
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 18 }}
@@ -32,7 +32,7 @@ export function LeistungenHero() {
             transition={{ duration: 0.7, delay: 0.12, ease: EASE }}
             className="mt-6 max-w-[54ch] text-[1.0625rem] leading-[1.7] text-text-muted"
           >
-            Was sich von Auftrag zu Auftrag unterscheidet, ist nicht die Reihenfolge — sondern das, was am Ende für Ihren Betrieb dabei herauskommt.
+            Was sich von Auftrag zu Auftrag unterscheidet, ist nicht die Reihenfolge, sondern das, was am Ende für Ihren Betrieb dabei herauskommt.
           </motion.p>
         </div>
       </Container>
