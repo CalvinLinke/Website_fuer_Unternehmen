@@ -19,8 +19,8 @@ export function Testimonials() {
           <SectionHeading
             align="center"
             eyebrow="Rückmeldungen"
-            title="Anonymisiert — aus gutem Grund offen gelegt"
-            description="Die meisten Unternehmen, mit denen ich arbeite, möchten ihren Web-Partner nicht öffentlich nennen. Was bleibt, sind Muster aus echten Rückmeldungen — hier rollenbasiert wiedergegeben, statt mit erfundenen Namen versehen."
+            title="Anonymisiert, aus gutem Grund offen gelegt"
+            description="Die meisten Unternehmen, mit denen ich arbeite, möchten ihren Web-Partner nicht öffentlich nennen. Was bleibt, sind Muster aus echten Rückmeldungen, hier rollenbasiert wiedergegeben, statt mit erfundenen Namen versehen."
           />
           <div className="mt-6">
             <StatBadge value={SOCIAL_PROOF.value} label={SOCIAL_PROOF.label} />
@@ -57,7 +57,7 @@ export function Testimonials() {
           className="mt-16 flex flex-col items-start gap-6 rounded-[var(--radius-card)] border border-line bg-cream/70 p-[clamp(1.75rem,4vw,2.75rem)] backdrop-blur-sm sm:flex-row sm:items-center sm:justify-between"
         >
           <p className="max-w-[44ch] text-[1.125rem] leading-[1.6] text-text">
-            Wenn Sie sich in einem dieser Sätze wiedererkennen, lassen Sie uns über Ihren Onlineauftritt sprechen — unverbindlich, auf Augenhöhe, ohne Verkaufsdruck.
+            Wenn Sie sich in einem dieser Sätze wiedererkennen, lassen Sie uns über Ihren Onlineauftritt sprechen, unverbindlich, auf Augenhöhe und ohne Verkaufsdruck.
           </p>
           <Button href={CTA.href} size="md" className="shrink-0">
             {CTA.label}
