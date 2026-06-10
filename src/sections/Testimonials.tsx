@@ -19,7 +19,7 @@ export function Testimonials() {
           <SectionHeading
             align="center"
             eyebrow="Rückmeldungen"
-            title="Anonymisiert, aus gutem Grund offen gelegt"
+            title="Anonym, aber aus echten Projekten"
             description="Die meisten Unternehmen, mit denen ich arbeite, möchten ihren Web-Partner nicht öffentlich nennen. Was bleibt, sind Muster aus echten Rückmeldungen, hier rollenbasiert wiedergegeben, statt mit erfundenen Namen versehen."
           />
           <div className="mt-6">
