@@ -9,9 +9,9 @@ import { SOCIAL_PROOF } from '@/lib/constants'
 const EASE = [0.16, 1, 0.3, 1] as const
 
 const RESULTS = [
-  'Mehr Anfragen von Kunden, die schon wissen, was Sie können — weil die Website das vorher klärt.',
+  'Mehr Anfragen von Kunden, die schon wissen, was Sie können, weil die Website das vorher klärt.',
   'Weniger Rückfragen im Erstkontakt, weil Leistungen, Ablauf und Kontaktwege eindeutig sind.',
-  'Ein Auftritt, der neben der Konkurrenz nicht untergeht — sondern den ersten Eindruck setzt.',
+  'Ein Auftritt, der neben der Konkurrenz nicht untergeht, sondern den ersten Eindruck setzt.',
 ] as const
 
 export function Loesung() {
