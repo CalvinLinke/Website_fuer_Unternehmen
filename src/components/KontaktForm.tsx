@@ -12,7 +12,7 @@ const labelClasses = 'text-[0.8125rem] font-semibold uppercase tracking-[0.12em]
 
 const RESULT_MESSAGES: Record<'config' | 'validation' | 'send', string> = {
   validation:
-    'Bitte füllen Sie Name, E-Mail-Adresse und Nachricht vollständig aus — und prüfen Sie, ob die E-Mail-Adresse korrekt geschrieben ist.',
+    'Bitte füllen Sie Name, E-Mail-Adresse und Nachricht vollständig aus, und prüfen Sie, ob die E-Mail-Adresse korrekt geschrieben ist.',
   config: `Der Versand ist aktuell noch nicht eingerichtet. Erreichen Sie uns in der Zwischenzeit gerne direkt telefonisch unter ${CONTACT.phone} oder per E-Mail an ${CONTACT.email}.`,
   send: `Beim Versand ist leider etwas schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an ${CONTACT.email}.`,
 }
@@ -84,7 +84,7 @@ export function KontaktForm() {
           name="message"
           required
           rows={5}
-          placeholder="Erzählen Sie kurz von Ihrem Vorhaben — ich melde mich zeitnah persönlich zurück."
+          placeholder="Erzählen Sie kurz von Ihrem Vorhaben, ich melde mich zeitnah persönlich zurück."
           className={`${inputClasses} resize-y`}
         />
       </Field>
