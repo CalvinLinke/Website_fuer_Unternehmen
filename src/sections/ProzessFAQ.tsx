@@ -16,7 +16,7 @@ export function ProzessFAQ() {
         <SectionHeading
           eyebrow="Häufig gestellte Fragen"
           title="Was Unternehmen vor dem ersten Gespräch wissen wollen"
-          description="Drei Fragen begegnen mir besonders oft — direkt und ehrlich beantwortet, statt schöngeredet. Dazu zwei weitere, die im Erstgespräch erfahrungsgemäß ohnehin aufkommen."
+          description="Drei Fragen begegnen mir besonders oft, direkt und ehrlich beantwortet, statt schöngeredet. Dazu zwei weitere, die im Erstgespräch erfahrungsgemäß ohnehin aufkommen."
         />
 
         <div className="mt-12 flex flex-col divide-y divide-line border-y border-line lg:max-w-[54rem]">
@@ -51,7 +51,7 @@ export function ProzessFAQ() {
           className="mt-12 flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-8"
         >
           <p className="max-w-[44ch] text-[1rem] leading-[1.6] text-text-muted">
-            Etwas anderes lässt Ihnen keine Ruhe? Das lässt sich am besten in einem kurzen, unverbindlichen Gespräch klären — nicht über ein FAQ.
+            Etwas anderes lässt Ihnen keine Ruhe? Das lässt sich am besten in einem kurzen, unverbindlichen Gespräch klären, nicht über ein FAQ.
           </p>
           <Button href={CTA.href} size="md" className="shrink-0">
             {CTA.label}
