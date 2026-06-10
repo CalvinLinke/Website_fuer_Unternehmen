@@ -73,11 +73,12 @@ export function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3, ease: EASE }}
+              className="inline-block rounded-[var(--radius-card)] bg-cream px-4 py-3"
             >
               <Logo variant="hero" priority />
             </motion.div>
 
-            <p className="mt-4 font-mono text-[0.5625rem] uppercase tracking-[0.14em] text-lavender/45">
+            <p className="mt-4 font-mono text-[0.5625rem] uppercase tracking-[0.14em] text-text-on-ink-muted">
               Für Unternehmen ohne Website oder mit veralteter Website
             </p>
 
