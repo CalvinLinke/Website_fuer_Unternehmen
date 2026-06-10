@@ -17,7 +17,7 @@ export function KontaktInfo() {
           Lieber gleich persönlich sprechen?
         </h3>
         <p className="text-[0.9375rem] leading-[1.65] text-text-on-ink-muted">
-          Rufen Sie an oder schreiben Sie direkt — Sie erreichen mich persönlich, ohne Callcenter und ohne Warteschleife.
+          Rufen Sie an oder schreiben Sie direkt, Sie erreichen mich persönlich, ohne Callcenter und ohne Warteschleife.
         </p>
       </div>
 
