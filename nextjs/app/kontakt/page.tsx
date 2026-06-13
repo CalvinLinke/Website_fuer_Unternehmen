@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import SiteEffects from '../../components/SiteEffects';
@@ -12,10 +12,22 @@ export default function Kontakt() {
   const { lang } = useLanguage();
   const t = translations[lang].pages.kontakt;
 
-  const [fields, setFields] = useState({ name: '', email: '', phone: '', company: '', message: '', privacy: false });
+  const [fields, setFields] = useState({ name: '', email: '', phone: '', company: '', service: '', message: '', privacy: false });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [mapConsent, setMapConsent] = useState(false);
 
   const set = (k: string, v: string | boolean) => setFields(f => ({ ...f, [k]: v }));
+
+  useEffect(() => {
+    const param = new URLSearchParams(window.location.search).get('leistung');
+    if (param) set('service', param);
+    if (localStorage.getItem('mapConsent') === '1') setMapConsent(true);
+  }, []);
+
+  function acceptMap() {
+    localStorage.setItem('mapConsent', '1');
+    setMapConsent(true);
+  }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -24,7 +36,7 @@ export default function Kontakt() {
       const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ name: fields.name, email: fields.email, phone: fields.phone, company: fields.company, message: fields.message }),
+        body: JSON.stringify({ name: fields.name, email: fields.email, phone: fields.phone, company: fields.company, leistung: fields.service, message: fields.message }),
       });
       setStatus(res.ok ? 'success' : 'error');
     } catch {
@@ -88,6 +100,15 @@ export default function Kontakt() {
                       </div>
                     </div>
                     <div className="form__group">
+                      <label className="form__label" htmlFor="k-service">{t.labelService}</label>
+                      <select id="k-service" className="form__select" value={fields.service} onChange={e => set('service', e.target.value)}>
+                        <option value="">{t.serviceDefault}</option>
+                        {(t.serviceOptions as { value: string; label: string }[]).map(o => (
+                          <option key={o.value} value={o.value}>{o.label}</option>
+                        ))}
+                      </select>
+                    </div>
+                    <div className="form__group">
                       <label className="form__label" htmlFor="k-message">{t.labelMessage} *</label>
                       <textarea id="k-message" className="form__textarea" required rows={5} value={fields.message} onChange={e => set('message', e.target.value)} />
                     </div>
@@ -133,14 +154,30 @@ export default function Kontakt() {
                   </div>
                 </div>
 
-                {/* Google Maps */}
+                {/* Google Maps — Zwei-Klick-Lösung (DSGVO § 25 TTDSG) */}
                 <div className="kontakt__map">
-                  <iframe
-                    src="https://maps.google.com/maps?q=Gr%C3%BCne+Str.+13B+01067+Dresden&output=embed&hl=de"
-                    width="100%" height="220" style={{ border: 0, borderRadius: 'var(--r-md)' }}
-                    allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
-                    title="Büro Dresden"
-                  />
+                  {mapConsent ? (
+                    <iframe
+                      src="https://maps.google.com/maps?q=Gr%C3%BCne+Str.+13B+01067+Dresden&output=embed&hl=de"
+                      width="100%" height="220" style={{ border: 0, borderRadius: 'var(--r-md)' }}
+                      allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+                      title="Büro Dresden"
+                    />
+                  ) : (
+                    <div className="map-consent">
+                      <svg className="map-consent__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                      </svg>
+                      <p className="map-consent__text">
+                        {lang === 'de'
+                          ? 'Karte wird von Google Maps bereitgestellt. Durch Klick stimmen Sie der Übertragung von Daten an Google zu.'
+                          : 'Map is provided by Google Maps. By clicking, you agree to data being transferred to Google.'}
+                      </p>
+                      <button className="map-consent__btn" onClick={acceptMap}>
+                        {lang === 'de' ? 'Karte laden' : 'Load map'}
+                      </button>
+                    </div>
+                  )}
                 </div>
 
                 {/* Was passiert als Nächstes */}
