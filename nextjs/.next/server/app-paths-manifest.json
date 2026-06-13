@@ -1,9 +1,0 @@
-{
-  "/icon/route": "app/icon/route.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/referenzen/page": "app/referenzen/page.js",
-  "/leistungen/page": "app/leistungen/page.js",
-  "/prozess/page": "app/prozess/page.js",
-  "/kontakt/page": "app/kontakt/page.js",
-  "/technologie/page": "app/technologie/page.js"
-}
