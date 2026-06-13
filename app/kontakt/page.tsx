@@ -103,7 +103,7 @@ export default function Kontakt() {
                       <label className="form__label" htmlFor="k-service">{t.labelService}</label>
                       <select id="k-service" className="form__select" value={fields.service} onChange={e => set('service', e.target.value)}>
                         <option value="">{t.serviceDefault}</option>
-                        {(t.serviceOptions as { value: string; label: string }[]).map(o => (
+                        {(t.serviceOptions as unknown as { value: string; label: string }[]).map(o => (
                           <option key={o.value} value={o.value}>{o.label}</option>
                         ))}
                       </select>
