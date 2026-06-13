@@ -1,0 +1,8 @@
+{
+  "/icon/route": "app/icon/route.js",
+  "/faq/page": "app/faq/page.js",
+  "/referenzen/page": "app/referenzen/page.js",
+  "/leistungen/page": "app/leistungen/page.js",
+  "/prozess/page": "app/prozess/page.js",
+  "/kontakt/page": "app/kontakt/page.js"
+}
