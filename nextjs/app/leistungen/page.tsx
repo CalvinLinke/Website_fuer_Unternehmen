@@ -5,6 +5,8 @@ import SiteEffects from "../../components/SiteEffects";
 import { useLanguage } from "../../lib/LanguageContext";
 import { translations } from "../../lib/translations";
 
+const cardParams = ['fokus', 'komplett', 'marke', 'redesign', 'redaktion'];
+
 const iconA = [
   <svg key="a1" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="14" rx="2" /><path d="M8 21h8M12 17v4" /></svg>,
   <svg key="a2" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8M12 17v4M2 10h20" /></svg>,
@@ -50,7 +52,7 @@ export default function Leistungen() {
                     <ul className="offerings__list">
                       {card.points.map((p) => <li key={p}>{p}</li>)}
                     </ul>
-                    <a className="sec-more__link" href="mailto:info@website-fuer-unternehmen.de" style={{ marginTop: 'auto', paddingTop: '20px' }}>
+                    <a className="sec-more__link" href={`/kontakt?leistung=${cardParams[i]}`} style={{ marginTop: 'auto', paddingTop: '20px' }}>
                       {t.cardCta}
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17 17 7M9 7h8v8" /></svg>
                     </a>
@@ -73,7 +75,7 @@ export default function Leistungen() {
                     <ul className="offerings__list">
                       {card.points.map((p) => <li key={p}>{p}</li>)}
                     </ul>
-                    <a className="sec-more__link" href="mailto:info@website-fuer-unternehmen.de" style={{ marginTop: 'auto', paddingTop: '20px' }}>
+                    <a className="sec-more__link" href={`/kontakt?leistung=${cardParams[3 + i]}`} style={{ marginTop: 'auto', paddingTop: '20px' }}>
                       {t.cardCta}
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17 17 7M9 7h8v8" /></svg>
                     </a>
@@ -85,7 +87,7 @@ export default function Leistungen() {
             <div style={{ background: 'var(--mist)', borderRadius: 'var(--r-lg)', padding: '48px 40px', marginTop: '80px', textAlign: 'center' }}>
               <h3 style={{ fontFamily: 'var(--font-d)', fontSize: 'clamp(1.2rem,2vw,1.6rem)', marginBottom: '12px' }}>{t.ctaTitle}</h3>
               <p style={{ color: 'var(--muted)', marginBottom: '28px', maxWidth: '50ch', marginInline: 'auto', lineHeight: 1.7 }}>{t.ctaLead}</p>
-              <a className="btn btn--primary" href="mailto:info@website-fuer-unternehmen.de">
+              <a className="btn btn--primary" href="/kontakt">
                 {t.ctaBtn}
                 <svg className="arrow" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17 17 7M9 7h8v8" /></svg>
               </a>
