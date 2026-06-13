@@ -1,0 +1,94 @@
+==================================================================
+PROMPT FÜR CLAUDE CODE — Landingpage "Website für Unternehmen"
+1:1-Umsetzung in Next.js (App Router) + TypeScript + Tailwind
+==================================================================
+
+So benutzt du diesen Prompt:
+1. Entpacke das Handoff-Paket "design_handoff_landingpage/".
+2. Öffne den ENTPACKTEN Ordner in Claude Code (oder lege seinen Inhalt in dein
+   Projektverzeichnis), damit Claude Code die Dateien lesen kann.
+3. Kopiere ALLES zwischen den Linien "PROMPT ANFANG" / "PROMPT ENDE" und schicke
+   es als erste Nachricht an Claude Code.
+
+------------------------------------------------------------------
+PROMPT ANFANG
+------------------------------------------------------------------
+Du bist mein Senior-Frontend-Entwickler. In diesem Repository liegt ein Handoff-Paket
+im Ordner `design_handoff_landingpage/`. Setze daraus eine **pixelgenaue, lauffähige
+Landingpage** um. Halte dich strikt an die gelieferten Dateien — NICHT frei
+interpretieren.
+
+ZIEL
+- Stack: Next.js 15 (App Router), React 19, TypeScript, Tailwind CSS v4.
+- Das Ergebnis muss **1:1** wie die Referenz aussehen und sich verhalten.
+- Maßgebliche Design-Referenz ("Ground Truth"): `design_handoff_landingpage/reference/Landingpage.html`.
+  Wenn etwas unklar ist, prüfe IMMER gegen diese Datei (Pixel, Farben, Abstände, Timing).
+
+VORGEHEN
+1. Lies zuerst vollständig:
+   - `design_handoff_landingpage/README.md` (komplette Spezifikation: Sektionen, Tokens, Verhalten)
+   - `design_handoff_landingpage/nextjs/README-SETUP.md` (Setup-Anleitung)
+   - `design_handoff_landingpage/reference/Landingpage.html` (Pixel-Referenz)
+2. Erzeuge ein frisches Next.js-Projekt im aktuellen Verzeichnis (falls noch keins existiert):
+   - `npx create-next-app@latest . ` mit: TypeScript = Ja, ESLint = Ja, Tailwind CSS = Ja,
+     `src/`-Verzeichnis = Nein, App Router = Ja, Import-Alias = Standard (@/*).
+3. Übernimm anschließend die Dateien aus `design_handoff_landingpage/nextjs/` **unverändert**
+   in das Projekt (überschreibe die Platzhalter):
+   - `app/layout.tsx`, `app/page.tsx`, `app/globals.css`
+   - den gesamten Ordner `components/` (Nav, Hero, Process, Services, Pricing, Faq, Cta,
+     Footer, **SiteEffects.jsx**)
+   - `public/logo.png`
+   Passe nur Pfade/Imports an, falls dein Scaffold abweicht. Verändere KEINE Styles,
+   KEINE Animationslogik, KEINE Texte.
+4. Starte (`npm run dev`) und vergleiche jede Sektion visuell mit
+   `design_handoff_landingpage/reference/Landingpage.html` sowie den Bildern in
+   `design_handoff_landingpage/screenshots/`. Korrigiere Abweichungen, bis es deckungsgleich ist.
+
+HARTE VORGABEN (nicht abweichen)
+- Das komplette Design lebt **bewusst** in `app/globals.css` (1:1-Port: CSS-Variablen/Tokens,
+  alle Keyframes, Verläufe, Schatten, responsives Verhalten). Tailwind ist verfügbar, aber
+  das Aussehen kommt aus diesem Stylesheet — **baue es NICHT in Tailwind-Utilities um**.
+- Die gesamte Interaktions-/Animationslogik steckt **1:1** in
+  `components/SiteEffects.jsx` (`"use client"`): Partikel-Netzwerk (`#netCanvas`),
+  driftende Website-Cards (`#cardField`), CTA-"W-Weave"-Canvas (`#ctacanvas`), Scroll-Reveal
+  via IntersectionObserver, FAQ-Akkordeon, Nav-Scroll-State, magnetische Buttons und der
+  Hintergrund-/Theme-Switcher. NICHT neu schreiben — verwenden wie geliefert.
+- Fonts ausschließlich über `next/font/google`: Bricolage Grotesque (Display, --font-d),
+  Manrope (Text, --font-b), JetBrains Mono (Labels, --font-m). Keine externen <link>-Fonts.
+- Hero-Standard: `data-bg="network" data-theme="light"` (Variante "Netzwerk · Hell").
+- Der Hintergrund-/Theme-Switcher im Hero **bleibt sichtbar und funktional**
+  (Besucher können Cards/Netzwerk und Hell/Dunkel live umschalten).
+- Sprache: Deutsch. Texte/Preise exakt aus den Komponenten übernehmen
+  (Eckdaten: Lieferung 2–4 Wochen, Festpreis ohne Nachverhandeln, neueste Technologie,
+  individuell; Preise 990 € / 2.490 € / „Auf Anfrage").
+- `prefers-reduced-motion` muss respektiert bleiben (ist im CSS/JS bereits angelegt).
+
+TAILWIND-VERSION
+- Standard ist Tailwind v4 (so wie create-next-app es liefert). Falls dein Projekt Tailwind v3
+  nutzt, folge dem Abschnitt "Tailwind v3 statt v4?" in
+  `design_handoff_landingpage/nextjs/README-SETUP.md` (nur globals.css-Direktiven +
+  postcss/tailwind.config anpassen; restliches Design-CSS bleibt unverändert).
+
+AKZEPTANZKRITERIEN
+- `npm run build` läuft fehlerfrei durch.
+- Alle Sektionen vorhanden und deckungsgleich mit der Referenz: Nav (mit Scroll-Zustand),
+  Hero (animierter Hintergrund + funktionierender Switcher, Netzwerk·Hell als Default),
+  Prozess, Leistungen, Preise, FAQ (Akkordeon), CTA (Canvas), Footer.
+- Netzwerk-Partikel animieren; Card-Field driftet bei Umschaltung auf "Cards";
+  Dunkel-Variante zeigt Aubergine-Hintergrund mit weißem Text; CTA-Canvas läuft.
+- Scroll-Reveal-Animationen, FAQ-Aufklappen und magnetische Buttons funktionieren.
+- Responsives Verhalten wie in der Referenz (Breakpoints 880px / 980px / 560px).
+
+Wenn du fertig bist, liste kurz auf, welche Dateien du erstellt/übernommen hast und nenne
+etwaige bewusste Abweichungen (es sollte keine geben).
+------------------------------------------------------------------
+PROMPT ENDE
+------------------------------------------------------------------
+
+Optionaler Zusatz (nur wenn gewünscht), als weitere Nachricht an Claude Code:
+- "Verdrahte den Switcher für Produktion fest auf <Netzwerk·Hell> und entferne die
+   Umschaltleiste." 
+- "Ersetze die Platzhalter-Texte/Preise durch folgende echten Inhalte: ..."
+- "Integriere das Ganze in mein bestehendes Repo unter <Pfad> statt ein neues Projekt
+   zu scaffolden."
+==================================================================
